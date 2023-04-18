@@ -1,0 +1,415 @@
+/* Example media query for small screens (e.g., mobile devices) */
+@media (max-width: 767px) {
+  /* CSS styles for small screens */
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-list {
+    margin-top: 20px;
+  }
+
+  .nav-item {
+    margin-bottom: 10px;
+  }
+
+  .container {
+    padding: 20px;
+  }
+
+  .section-title {
+    font-size: 24px;
+  }
+  #featuers {
+    font-size: 18px;
+  }
+
+  .service-icon {
+    max-width: 100px;
+  }
+}
+
+/* Example media query for medium screens (e.g., tablets) */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* CSS styles for medium screens */
+  .container {
+    padding: 40px;
+  }
+
+  .section-title {
+    font-size: 36px;
+  }
+
+  .service-icon {
+    max-width: 150px;
+  }
+}
+
+/* Example media query for large screens (e.g., desktops) */
+@media (min-width: 992px) {
+  /* CSS styles for large screens */
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 48px;
+  }
+
+  .service-icon {
+    max-width: 200px;
+  }
+}
+
+/* Reset some default styles */
+body, figure, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set font and background color */
+body {
+    font-family: "Roboto", Arial, sans-serif; /* Update font */
+    
+}
+
+/* Add some spacing and center align header */
+header {
+    padding: 20px;
+    text-align: center;
+    background-color: #002E62;
+    color: #fff;
+}
+
+
+/* Style navigation menu */
+
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    font-size: 20px;
+}
+
+nav a {
+    display: inline-block;
+    padding: 10px 20px;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 10px;
+    font-family: "Roboto", Arial, sans-serif; /* Update font */
+}
+nav a:hover {
+    color: black;
+    background-color: white;
+}
+
+
+/* Style section with background image */
+#home {
+    background-image: url('LogoADM.png');
+    background-size: cover;
+    height: 100vh;
+    position: relative; /* Add relative positioning */
+}
+
+/* Style transparent layer */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 255, 0.5); /* Set desired color and opacity for the overlay */
+    z-index: 1; /* Set higher z-index to position overlay above image */
+}
+
+/* Style text and button */
+#home .text {
+    position: relative; /* Add relative positioning to text container */
+    z-index: 2; /* Set z-index to position text above overlay */
+    text-align: center;
+    padding-top: 150px;
+    color: #fff;
+}
+
+#home .text h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+#home .text p {
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+#home .text .btn {
+    font-size: 18px;
+    padding: 10px 30px;
+    background-color: #002E62;
+    color: #333;
+    text-decoration: none;
+}
+
+
+
+/* Style homepage section */
+#home {
+    padding: 80px 20px;
+    text-align: center;
+    background-image: url('LogoADM.png'); /* Add your background image URL here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative; /* Add relative positioning for pseudo-element */
+}
+
+/* Add pseudo-element for transparent overlay */
+#home::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 46, 98, 0.5); /* Adjust the color and opacity as needed */
+    z-index: -0.4; /* Set a negative z-index to place the overlay below the content */
+}
+
+#home h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    font-family: "Roboto", Arial, sans-serif; /* Update font */
+    color: #fff; /* Set text color for better visibility on the background image */
+    position: relative; /* Add relative positioning to place the text above the overlay */
+    z-index: 1; /* Set a higher z-index to place the text above the overlay */
+}
+
+#home p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    font-family: "Roboto", Arial, sans-serif; /* Update font */
+    color: #fff; /* Set text color for better visibility on the background image */
+    position: relative; /* Add relative positioning to place the text above the overlay */
+    z-index: 1; /* Set a higher z-index to place the text above the overlay */
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #000000;
+    text-decoration: none;
+    font-family: "Roboto", Arial, sans-serif; /* Update font */
+    position: relative; /* Add relative positioning to place the button above the overlay */
+    z-index: 1; /* Set a higher z-index to place the button above the overlay */
+}
+
+.cta-button:hover{
+
+  transform: scale(1.1); /* Use transform property to scale the button up by 10% */
+
+}
+
+
+.why-choose-us {
+  background-color: #fff; /* Change background color to your preference */
+  padding: 50px 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.section-title {
+    color: #002E62;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  position: relative; /* Add position relative for the pseudo element */
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  bottom: -15px; /* Add desired distance from text */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px; /* Add desired width of the line */
+  height: 2px; /* Add desired height of the line */
+  background-color: #002E62; /* Add desired color of the line */
+}
+
+.section-description {
+    color: #013876;
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+}
+
+.feature {
+  flex-basis: 300px;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #002E62;
+  border-radius: 20px;
+  margin: 0 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.feature:hover {
+  transform: scale(1.05);
+}
+
+.feature i {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.feature-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative; /* Add relative positioning for the feature title */
+}
+
+.feature-title::after {
+  content: "";
+  position: absolute;
+  bottom: -6px; /* Add space for the line below the title */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px; /* Customize width of the line */
+  height: 2px; /* Customize height of the line */
+  background-color: #002E62; /* Customize color of the line */
+}
+
+.feature-description {
+  font-size: 16px;
+  color: #013876;
+}
+
+#services {
+  background-color: #f8f8f8;
+  padding: 50px;
+}
+
+.section-title {
+  text-align: center;
+  color: #012752;
+  font-size: 36px;
+  margin-bottom: 50px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-item {
+  text-align: center;
+  max-width: 300px;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.service-item:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  width: 150px;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+
+.service-title {
+  color: #012752;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.service-description {
+  color: #012752;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.service-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #012752;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.service-btn:hover {
+  background-color: #002e62;
+}
+
+/* Add this CSS to your existing code */
+#services {
+  opacity: 0; /* Initially set opacity to 0 */
+  transform: translateY(20px); /* Initially push section down 20px */
+  transition: opacity 0.5s ease, transform 0.5s ease; /* Add transition for smooth effect */
+}
+
+#services.fade-in {
+  opacity: 1; /* When .fade-in class is added, set opacity to 1 */
+  transform: translateY(0); /* When .fade-in class is added, reset transform */
+}
+
+
+
+/* Footer styles */
+.footer {
+  background-color: #002E62;
+  color: #ffffff;
+  padding: 40px 0;
+}
+
+.footer h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.footer a {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
+
